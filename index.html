@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELNIC | Premium Tech Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="logo">VELNIC</div>
+
+    <nav class="navbar">
+        <a href="#categories">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Best Sellers</a>
+        <a href="#newsletter">New Arrivals</a>
+        <a href="#footer">About</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+   <div class="nav-icons">
+    <span>🔍</span>
+    <span>👤</span>
+    <span class="cart-icon">🛒 <b id="cart-count">0</b></span>
+</div>
+
+</header>
+<div id="cart-sidebar" class="cart-sidebar">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <p>Total Items: <span id="cart-count-side">0</span></p>
+<p><b>Total:</b> £<span id="cart-total">0</span></p>
+<button onclick="checkout()">Checkout</button>
+    <button onclick="closeCart()">Close</button>
+
+</div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            Introducing the Velnic Sport
+        </p>
+
+        <h1>
+            High-Performance <br>
+            & Elegant Design
+        </h1>
+
+        <p class="hero-text">
+            Premium wireless technology built for everyday
+            performance and modern lifestyle.
+        </p>
+
+        <a href="#products" class="hero-btn">
+            Shop the Velnic Sport
+        </a>
+
+    </div>
+
+    <div class="hero-image"></div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories" id="categories">
+
+    <h2 class="section-title">Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="images/earbuds.png" alt="">
+            <h3>Wireless Earbuds</h3>
+            <p>Premium sound with active noise cancellation.</p>
+        </div>
+
+        <div class="category-card">
+            <img src="images/watch.png" alt="">
+            <h3>Smart Watches</h3>
+            <p>Track fitness and stay connected all day.</p>
+        </div>
+
+        <div class="category-card">
+            <img src="images/speaker.png" alt="">
+            <h3>Bluetooth Speakers</h3>
+            <p>Powerful sound with modern design.</p>
+        </div>
+
+        <div class="category-card">
+            <img src="images/charger.png" alt="">
+            <h3>Fast Chargers</h3>
+            <p>Charge faster and safer.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+
+    <div class="feature-box">
+        <div class="feature-icon">🚚</div>
+        <h4>Free Shipping</h4>
+        <p>Fast delivery on all orders.</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="feature-icon">🛡️</div>
+        <h4>Secure Payment</h4>
+        <p>100% secure checkout.</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="feature-icon">⭐</div>
+        <h4>Premium Quality</h4>
+        <p>Best selected products.</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="feature-icon">💬</div>
+        <h4>24/7 Support</h4>
+        <p>Always here to help.</p>
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products" id="products">
+
+    <h2 class="section-title">Best Sellers</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/earbuds.png" alt="">
+            <h3>Velnic Sport Earbuds</h3>
+            <p>Deep bass wireless experience.</p>
+            <div class="price">£79</div>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/watch.png" alt="">
+            <h3>Smart Watch</h3>
+            <p>Health tracking & premium design.</p>
+            <div class="price">£129</div>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/speaker.png" alt="">
+            <h3>Bluetooth Speaker</h3>
+            <p>Powerful portable sound.</p>
+            <div class="price">£59</div>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/powerbank.png" alt="">
+            <h3>Power Bank</h3>
+            <p>Fast charging 20,000mAh.</p>
+            <div class="price">£49</div>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter" id="newsletter">
+
+    <h2>Join the Velnic Club</h2>
+    <p>Subscribe for updates and offers.</p>
+
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="footer">
+
+    <div class="footer-container">
+
+        <div>
+            <div class="footer-logo">VELNIC</div>
+            <p>Premium tech accessories for modern lifestyle.</p>
+        </div>
+
+        <div>
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#categories">Earbuds</a></li>
+                <li><a href="#categories">Watches</a></li>
+                <li><a href="#categories">Speakers</a></li>
+                <li><a href="#categories">Chargers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#footer">Shipping</a></li>
+                <li><a href="#footer">Returns</a></li>
+                <li><a href="#footer">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#footer">Privacy Policy</a></li>
+                <li><a href="#footer">Terms</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 VELNIC. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
